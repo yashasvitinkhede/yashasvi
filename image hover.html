@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<style type="text/css">
+			.container-img {
+			  position: relative;
+			  width: 400px;
+			}
+            *{color:rgb(9, 10, 10)}
+            #r1{color:aliceblue}
+
+			.image {
+			  display: block;
+			  width:450px;
+			  height:632px;
+			  transition:1s;
+			}
+
+			.overlay {
+			  position:absolute;
+			  top: 0;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  height: 100%;
+			  opacity:0;
+			  transition: 5s;
+			  background-color:rgb(255, 255, 255);
+			}
+
+			.container-img:hover .overlay {
+			  opacity:1;
+			}
+			.container-img:hover .image {
+			  
+			  transform:rotate(360deg);
+
+			 
+			}
+			.text {
+			  color: rgb(255, 255, 255);
+			  font-size: 50px;
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  -webkit-transform: translate(-50%, -50%);
+			  -ms-transform: translate(-50%, -50%);
+			  -o-transform: translate(-50%, -50%);
+			  -moz-transform: translate(-50%, -50%);
+			  transform: translate(-50%, -50%);
+			  text-align: center;
+			  
+            }
+        .clr{
+            background-color: aqua;
+            animation: gg 5s infinite;
+        }
+          @keyframes gg{
+              from{filter: hue-rotate(0deg);}
+              to{filter: hue-rotate(360deg);}
+          }
+		</style>
+	</head>
+	<body >
+        <center>
+            <div class="clr">
+		<div>Image Overlay Effect</div>
+		<div class="container-img">
+			<img src="C:\Users\student\Desktop\yashasvi.files\image\image\image.jpg" alt="Demo Image" class="image">
+			
+		</div>
+        </div>
+	 </center>
+     </body>
+</html>
+
